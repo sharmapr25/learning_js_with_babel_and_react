@@ -1,7 +1,9 @@
 {
   "extends": "airbnb-base",
+  "plugins": ["jest"],
   "env": {
-    "mocha": true
+    "mocha": true,
+    "jest/globals": true
   },
   "globals": {
     "describe": true,
