@@ -2,7 +2,6 @@
   "extends": "airbnb-base",
   "plugins": ["jest"],
   "env": {
-    "mocha": true,
     "jest/globals": true
   },
   "globals": {
@@ -11,6 +10,7 @@
     "true": true
   },
   "rules": {
-    "no-underscore-dangle": 0
+    "no-underscore-dangle": 0,
+    "comma-dangle": ["error", "never"]
   }
 }
