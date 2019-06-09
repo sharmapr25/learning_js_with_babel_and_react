@@ -1,7 +1,7 @@
 {
   "name": "nodejs-tdd-template",
   "version": "1.0.0",
-  "description": "<add-project-description-here>",
+  "description": "hello",
   "scripts": {
     "test": "jest --coverage",
     "lint": "eslint .",
