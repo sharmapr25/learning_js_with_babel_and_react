@@ -16,7 +16,7 @@ export default class Measurement {
     return (convertedValue - otherMeasurement.value) === 0;
   }
 
-  add(otherMeasurement){
+  add(otherMeasurement) {
     const convertedValue = otherMeasurement.unit.convertTo(otherMeasurement.value, this.unit);
     return new Measurement(this.value + convertedValue, this.unit);
   }
