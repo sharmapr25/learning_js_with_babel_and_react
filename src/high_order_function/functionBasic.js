@@ -13,13 +13,15 @@ function getLowestNumber(numbers) {
 }
 
 function factorial(number) {
-  if (number === 0) {
-    return 1;
-  }
   if (number < 0) {
     throw new NegativeNumberError(`${number} is a negative value`);
   }
-  return number * factorial(number - 1);
+
+  function iter(fact) {
+    return number === 0 ? fact : number * factorial(number - 1);
+  }
+
+  return iter(1);
 }
 
 
